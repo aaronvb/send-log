@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { Climb, SEED_CLIMBS } from '@/data/seed-climbs'
+import { ClimbList } from '@/components/ClimbList'
 
 const sortByDateDesc = (climbs: Climb[]) =>
   [...climbs].sort((a, b) => b.date.localeCompare(a.date))
@@ -24,10 +25,7 @@ export default function Home() {
       {/* ClimbForm will be wired here */}
       <div className="mb-8" />
 
-      {/* ClimbList will be wired here */}
-      <div>
-        <p className="text-gray-400">{climbs.length} climbs loaded</p>
-      </div>
+      <ClimbList climbs={climbs} />
     </main>
   )
 }
