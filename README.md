@@ -6,7 +6,6 @@ A climbing send tracker built with Next.js, React, and Tailwind CSS. This projec
 
 - [Docker](https://www.docker.com/products/docker-desktop/) installed and running
 - [Claude Code](https://docs.anthropic.com/en/docs/claude-code) CLI installed
-- [Spec-Kit](https://github.com/nicholasgriffintn/spec-kit) skill installed in Claude Code
 
 ## Getting Started
 
