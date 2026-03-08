@@ -12,7 +12,7 @@ A climbing send tracker built with Next.js, React, and Tailwind CSS. This projec
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/<your-org>/send-log.git
+git clone git@github.com:aaronvb/send-log.git
 cd send-log
 ```
 
