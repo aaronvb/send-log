@@ -52,7 +52,7 @@ Run these commands in Claude Code, one at a time, waiting for each to complete:
 ```
 
 ```
-/speckit.plan Use the existing React state and component structure. No new dependencies. Display the personal best prominently above the climb list.
+/speckit.plan Use the existing React state and component structure. No new dependencies. Display the personal best prominently above the climb list and below the climb form.
 ```
 
 ```
@@ -74,7 +74,29 @@ Add a stats bar showing total climbs, send rate, and total attempts.
 ```
 
 ```
-/speckit.plan Use the existing React state. Compute stats from the climbs array. No new dependencies. Keep it as a single row of stats displayed inline.
+/speckit.plan Use the existing React state. Compute stats from the climbs array. No new dependencies. Keep it as a single row of stats displayed inline. Display below the climb form.
+```
+
+```
+/speckit.tasks
+```
+
+```
+/speckit.implement
+```
+
+---
+
+### Feature 3: Send History Graph (if time permits)
+
+Add a bar graph that visualizes how many grades were sent.
+
+```
+/speckit.specify Add a sends-by-grade bar chart below the climb form and above the climb list, showing how many climbs have been sent at each grade from V0 through V10. The chart updates reactively when new climbs are added and follows the app's dark theme.
+```
+
+```
+/speckit.plan Build using existing React state and Climb interface. Filter to sent climbs only and group by V-grade. Use pure CSS/Tailwind for bar rendering — no charting libraries. Display below the climb form and above the climb list.
 ```
 
 ```
