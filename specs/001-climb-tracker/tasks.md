@@ -89,10 +89,10 @@
 
 **Purpose**: Containerize the app so users can run it with only Docker installed
 
-- [ ] T014 [P] Create `.dockerignore` at repository root — exclude `node_modules`, `.next`, `.git`, `specs/`, `.specify/`, `*.md` (except Makefile-related)
-- [ ] T015 [P] Create `Dockerfile` at repository root — multi-stage build: (1) `deps` stage installs node_modules from package.json/package-lock.json, (2) `builder` stage copies source and runs `npm run build`, (3) `runner` stage uses Node.js Alpine, copies standalone output + public + static assets, exposes port 3000, starts with `node server.js`
-- [ ] T016 [P] Create `docker-compose.yml` at repository root — define `send-log` service with build context `.`, port mapping `3000:3000`, container name `send-log`
-- [ ] T017 Create `Makefile` at repository root — `build` target runs `docker compose build`, `run` target runs `docker compose up`
+- [x] T014 [P] Create `.dockerignore` at repository root — exclude `node_modules`, `.next`, `.git`, `specs/`, `.specify/`, `*.md` (except Makefile-related)
+- [x] T015 [P] Create `Dockerfile` at repository root — multi-stage build: (1) `deps` stage installs node_modules from package.json/package-lock.json, (2) `builder` stage copies source and runs `npm run build`, (3) `runner` stage uses Node.js Alpine, copies standalone output + public + static assets, exposes port 3000, starts with `node server.js`
+- [x] T016 [P] Create `docker-compose.yml` at repository root — define `send-log` service with build context `.`, port mapping `3000:3000`, container name `send-log`
+- [x] T017 Create `Makefile` at repository root — `build` target runs `docker compose build`, `run` target runs `docker compose up`
 
 **Checkpoint**: `make build` builds the Docker image successfully. `make run` starts the container and app is accessible at localhost:3000.
 
