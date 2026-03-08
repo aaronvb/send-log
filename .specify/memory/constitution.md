@@ -1,50 +1,102 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+  Sync Impact Report
+  ==================
+  Version change: (new) -> 1.0.0
+  Modified principles: N/A (initial ratification)
+  Added sections:
+    - Core Principles (5): Simplicity-First, Client-Side Only,
+      Dark Tailwind UI, Component Discipline, Domain Integrity
+    - Tech Stack Constraints
+    - Code Style
+    - Governance
+  Removed sections: None
+  Templates requiring updates:
+    - .specify/templates/plan-template.md ✅ no changes needed
+    - .specify/templates/spec-template.md ✅ no changes needed
+    - .specify/templates/tasks-template.md ✅ no changes needed
+    - .specify/templates/commands/*.md ✅ no command files exist
+  Follow-up TODOs: None
+-->
+
+# Send Log Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Simplicity-First
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+- The application MUST remain a single-page application with no routing
+- No authentication, no database, and no server-side state
+- All state MUST be managed client-side with React `useState`
+- The app MUST be seeded with sample data on load
+- YAGNI: features MUST NOT be added speculatively
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### II. Client-Side Only
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+- All data and logic MUST reside in the browser
+- No API calls, no backend services, no server-side rendering
+  of dynamic data
+- State persistence beyond the session is explicitly out of scope
+- New features MUST NOT introduce server dependencies
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### III. Dark Tailwind UI
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+- All styling MUST use Tailwind CSS utility classes directly
+- No custom CSS files, no CSS modules, no styled-components
+- The application MUST use a dark theme throughout: dark
+  backgrounds with light text
+- UI changes MUST maintain dark theme consistency across all
+  components
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### IV. Component Discipline
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+- All components MUST be functional components with hooks
+- Each component file MUST have a single responsibility
+- Components MUST use named exports (no default exports)
+- Component files MUST be colocated in the `components/` directory
+- Props MUST be destructured in function signatures
+- Data shapes MUST be defined as TypeScript `interface`
+  declarations, not `type` aliases
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### V. Domain Integrity
+
+- Bouldering grades MUST follow the V-scale: V0 through V10
+- A "send" MUST mean the climber completed the problem
+  successfully
+- A "project" MUST mean a problem the climber is working on
+  but has not sent yet
+- Attempts MUST count all tries, including the successful send
+- Domain terminology MUST be used consistently throughout
+  the codebase
+
+## Tech Stack Constraints
+
+- **Language**: TypeScript (strict mode)
+- **Framework**: Next.js with App Router
+- **Styling**: Tailwind CSS (utility classes only)
+- **State**: React `useState` (no external state libraries)
+- New dependencies MUST be justified; the default is to use
+  what is already in the stack
+- No ORM, no database driver, no HTTP client libraries
+
+## Code Style
+
+- No semicolons
+- Single quotes for strings
+- Arrow functions preferred over function declarations
+- Props MUST be destructured in function signatures
+- These rules MUST be consistent across all source files
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+- This constitution supersedes all ad-hoc conventions
+- Amendments MUST be documented with a version bump,
+  rationale, and updated date
+- Versioning follows semver: MAJOR for principle
+  removals/redefinitions, MINOR for additions/expansions,
+  PATCH for clarifications
+- All feature specs and implementation plans MUST pass a
+  constitution compliance check before implementation begins
+- Complexity beyond these principles MUST be justified in a
+  Complexity Tracking table in the implementation plan
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2026-03-07 | **Last Amended**: 2026-03-07
