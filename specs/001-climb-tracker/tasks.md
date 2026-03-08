@@ -79,7 +79,7 @@
 
 ### Implementation for User Story 3
 
-- [ ] T013 [US3] Update `components/ClimbCard.tsx` — add visual distinction between sent and project climbs. Sent: green accent (e.g., `border-green-500`, `text-green-400`) with check mark or "Sent" badge. Project: yellow/amber accent (e.g., `border-yellow-500`, `text-yellow-400`) with "Project" badge. Distinction must be scannable at a glance per theme contract.
+- [x] T013 [US3] Update `components/ClimbCard.tsx` — add visual distinction between sent and project climbs. Sent: green accent (e.g., `border-green-500`, `text-green-400`) with check mark or "Sent" badge. Project: yellow/amber accent (e.g., `border-yellow-500`, `text-yellow-400`) with "Project" badge. Distinction must be scannable at a glance per theme contract.
 
 **Checkpoint**: Sent and project climbs are visually distinct. Sample data shows a clear mix. User Story 3 is fully functional and independently testable.
 
