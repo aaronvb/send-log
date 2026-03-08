@@ -34,7 +34,7 @@
 
 **CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T007 Implement `app/page.tsx` as `'use client'` component with `useState<Climb[]>` initialized from `SEED_CLIMBS`, sorted by date descending. Include `addClimb` handler that generates an id, adds the climb, and re-sorts. Compose placeholder slots for ClimbForm and ClimbList.
+- [x] T007 Implement `app/page.tsx` as `'use client'` component with `useState<Climb[]>` initialized from `SEED_CLIMBS`, sorted by date descending. Include `addClimb` handler that generates an id, adds the climb, and re-sorts. Compose placeholder slots for ClimbForm and ClimbList.
 
 **Checkpoint**: Page loads with seed data in state (verifiable via React DevTools). Foundation ready for component implementation.
 
