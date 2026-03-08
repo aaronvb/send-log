@@ -17,12 +17,12 @@
 
 **Purpose**: Scaffold the Next.js project and configure foundational files
 
-- [ ] T001 Scaffold Next.js project with `npx create-next-app@latest . --typescript --tailwind --app --eslint --no-src-dir --import-alias "@/*"`
-- [ ] T002 Configure `next.config.js` to set `output: 'standalone'` for Docker compatibility
-- [ ] T003 [P] Replace default content in `app/globals.css` with Tailwind directives only (remove create-next-app boilerplate styles)
-- [ ] T004 [P] Configure `app/layout.tsx` with dark theme body classes (`bg-gray-950 text-gray-100`), app title "Send Log", and globals.css import
-- [ ] T005 [P] Create `data/seed-climbs.ts` with `Climb` interface and `SEED_CLIMBS` array (8-10 entries spanning V0-V10, dates over past 2-3 weeks, mix of sent/unsent, varied attempts)
-- [ ] T006 Clean up create-next-app boilerplate from `app/page.tsx` (remove default JSX, keep as minimal placeholder)
+- [x] T001 Scaffold Next.js project with `npx create-next-app@latest . --typescript --tailwind --app --eslint --no-src-dir --import-alias "@/*"`
+- [x] T002 Configure `next.config.js` to set `output: 'standalone'` for Docker compatibility
+- [x] T003 [P] Replace default content in `app/globals.css` with Tailwind directives only (remove create-next-app boilerplate styles)
+- [x] T004 [P] Configure `app/layout.tsx` with dark theme body classes (`bg-gray-950 text-gray-100`), app title "Send Log", and globals.css import
+- [x] T005 [P] Create `data/seed-climbs.ts` with `Climb` interface and `SEED_CLIMBS` array (8-10 entries spanning V0-V10, dates over past 2-3 weeks, mix of sent/unsent, varied attempts)
+- [x] T006 Clean up create-next-app boilerplate from `app/page.tsx` (remove default JSX, keep as minimal placeholder)
 
 **Checkpoint**: Project runs with `npm run dev`, shows empty dark-themed page at localhost:3000
 
