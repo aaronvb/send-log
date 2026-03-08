@@ -1,0 +1,16 @@
+node_modules
+.next
+.git
+specs/
+.specify/
+*.md
+!Makefile
+.DS_Store
+.env*
+coverage
+.vercel
+npm-debug.log*
+yarn-debug.log*
+.pnpm-debug.log*
+*.tsbuildinfo
+next-env.d.ts

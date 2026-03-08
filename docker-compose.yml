@@ -1,0 +1,6 @@
+services:
+  send-log:
+    build: .
+    ports:
+      - '3000:3000'
+    container_name: send-log
