@@ -64,8 +64,8 @@
 
 ### Implementation for User Story 2
 
-- [ ] T011 [US2] Create `components/ClimbForm.tsx` — named export, accepts `{ onAdd }` prop (destructured). Implement controlled form with: name text input (required), grade dropdown (V0-V10), attempts number input (min 1, default 1), sent checkbox (default unchecked), date input (default today's date YYYY-MM-DD). On submit: validate, call `onAdd` with form data (without id), reset all fields to defaults. Use Tailwind dark form styling with visible input borders.
-- [ ] T012 [US2] Wire `ClimbForm` into `app/page.tsx` — pass `addClimb` handler as `onAdd` prop. Place form above the climb list per UI contract layout.
+- [x] T011 [US2] Create `components/ClimbForm.tsx` — named export, accepts `{ onAdd }` prop (destructured). Implement controlled form with: name text input (required), grade dropdown (V0-V10), attempts number input (min 1, default 1), sent checkbox (default unchecked), date input (default today's date YYYY-MM-DD). On submit: validate, call `onAdd` with form data (without id), reset all fields to defaults. Use Tailwind dark form styling with visible input borders.
+- [x] T012 [US2] Wire `ClimbForm` into `app/page.tsx` — pass `addClimb` handler as `onAdd` prop. Place form above the climb list per UI contract layout.
 
 **Checkpoint**: User can fill out and submit the form. New climb appears at correct sorted position. Form resets to defaults. Validation prevents empty name and attempts < 1. User Story 2 is fully functional and independently testable.
 
