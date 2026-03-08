@@ -102,10 +102,10 @@
 
 **Purpose**: Final cleanup and validation
 
-- [ ] T018 Remove any remaining create-next-app boilerplate (unused images in `public/`, default favicon if replaced, etc.)
-- [ ] T019 Validate full app workflow: `make build` then `make run`, verify app loads with seed data, add a new climb, confirm sorted position and visual distinction
-- [ ] T020 Run `npx tsc --noEmit` to verify zero TypeScript errors
-- [ ] T021 Run `npm run lint` to verify zero linting errors
+- [x] T018 Remove any remaining create-next-app boilerplate (unused images in `public/`, default favicon if replaced, etc.)
+- [x] T019 Validate full app workflow: `make build` then `make run`, verify app loads with seed data, add a new climb, confirm sorted position and visual distinction
+- [x] T020 Run `npx tsc --noEmit` to verify zero TypeScript errors
+- [x] T021 Run `npm run lint` to verify zero linting errors
 
 ---
 
