@@ -39,3 +39,11 @@ A climbing send tracker for logging bouldering problems and routes.
 - Single quotes for strings
 - Arrow functions preferred
 - Destructure props in function signatures
+
+## Recent Changes
+- 001-climb-tracker: Added TypeScript 5.x (via Next.js) + Next.js (App Router), React 19, Tailwind CSS — all from create-next-app
+- 001-climb-tracker: Added [if applicable, e.g., PostgreSQL, CoreData, files or N/A]
+
+## Active Technologies
+- TypeScript 5.x (via Next.js) + Next.js (App Router), React 19, Tailwind CSS — all from create-next-app (001-climb-tracker)
+- N/A — client-side useState only, no persistence (001-climb-tracker)
