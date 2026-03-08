@@ -48,9 +48,9 @@
 
 ### Implementation for User Story 1
 
-- [ ] T008 [P] [US1] Create `components/ClimbCard.tsx` — named export, accepts `{ climb }` prop (destructured), displays name, grade, attempts count, sent/project status label, and formatted date. Use Tailwind dark card styling (`bg-gray-800`, light text). Handle long names with truncation or wrapping.
-- [ ] T009 [P] [US1] Create `components/ClimbList.tsx` — named export, accepts `{ climbs }` prop (destructured), maps over array rendering `ClimbCard` for each entry. Renders as a vertical stack with gap spacing.
-- [ ] T010 [US1] Wire `ClimbList` into `app/page.tsx` — pass sorted `climbs` state array to `ClimbList` component.
+- [x] T008 [P] [US1] Create `components/ClimbCard.tsx` — named export, accepts `{ climb }` prop (destructured), displays name, grade, attempts count, sent/project status label, and formatted date. Use Tailwind dark card styling (`bg-gray-800`, light text). Handle long names with truncation or wrapping.
+- [x] T009 [P] [US1] Create `components/ClimbList.tsx` — named export, accepts `{ climbs }` prop (destructured), maps over array rendering `ClimbCard` for each entry. Renders as a vertical stack with gap spacing.
+- [x] T010 [US1] Wire `ClimbList` into `app/page.tsx` — pass sorted `climbs` state array to `ClimbList` component.
 
 **Checkpoint**: App displays 8-10 seed climbs sorted by date descending. Each entry shows all five data points. User Story 1 is fully functional and independently testable.
 
