@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { Climb, SEED_CLIMBS } from '@/data/seed-climbs'
+import { ClimbForm } from '@/components/ClimbForm'
 import { ClimbList } from '@/components/ClimbList'
 
 const sortByDateDesc = (climbs: Climb[]) =>
@@ -22,8 +23,9 @@ export default function Home() {
     <main className="min-h-screen p-8">
       <h1 className="text-3xl font-bold mb-8">Send Log</h1>
 
-      {/* ClimbForm will be wired here */}
-      <div className="mb-8" />
+      <div className="mb-8">
+        <ClimbForm onAdd={addClimb} />
+      </div>
 
       <ClimbList climbs={climbs} />
     </main>
